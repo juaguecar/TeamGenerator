@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/icon_players"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toTopOf="@+id/players"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_person" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/players"
+        android:layout_width="290dp"
+        android:layout_height="169dp"
+        android:layout_marginStart="16dp"
+        android:hint="Players
+"
+        app:layout_constraintBottom_toTopOf="@+id/calculate_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/cost_of_service_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--    <RadioGroup-->
+    <!--        android:id="@+id/tip_options"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:checkedButton="@id/option_twenty_percent"-->
+    <!--        android:orientation="vertical"-->
+    <!--        app:layout_constraintStart_toStartOf="@id/service_question"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/service_question">-->
+
+    <!--        <RadioButton-->
+    <!--            android:id="@+id/option_twenty_percent"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="@string/amazing_20" />-->
+
+    <!--        <RadioButton-->
+    <!--            android:id="@+id/option_fifteen_percent"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="@string/amazing_15" />-->
+
+    <!--        <RadioButton-->
+    <!--            android:id="@+id/option_ten_percent"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="@string/amazing_10" />-->
+    <!--    </RadioGroup>-->
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/icon_round_up"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:importantForAccessibility="no"-->
+    <!--        app:srcCompat="@drawable/ic_round_up"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="@id/round_up_switch"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@id/round_up_switch" />--><![CDATA[
+
+    />
+
+    ]]>
+
+    <Button
+        android:id="@+id/calculate_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/calculate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/team1_player_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calculate_button"
+        app:layout_constraintVertical_bias="0.184"
+        tools:text="Team 1:
+        -Pepe
+        Team 2:
+        -Antonio" />
+
+    <TextView
+        android:id="@+id/team2_player_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calculate_button"
+        app:layout_constraintVertical_bias="0.328"
+        tools:text="Team 1:
+        -Pepe
+        Team 2:
+        -Antonio" />/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
