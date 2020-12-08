@@ -1,7 +1,6 @@
 package com.example.teamgenerator.domain
 
-data class Player(val name: String){
-    var value: Int = 0
+data class Player(val name: String, val value: Int){
 
     override fun toString(): String {
         return name
