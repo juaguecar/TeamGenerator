@@ -14,8 +14,14 @@ data class Team(val players: MutableList<Player>) {
 
     public fun getValue(): Int {
         var value = 0
+        if (teamIsEmpty()) return value;
         for (player in players)
             value += player.value
-        return value
+        return value / players.size;
+    }
+
+    private fun teamIsEmpty(): Boolean {
+        return players.size == 0;
+
     }
 }

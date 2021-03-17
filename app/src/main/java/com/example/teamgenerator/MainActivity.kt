@@ -60,10 +60,21 @@ class MainActivity : AppCompatActivity() {
                 team2.addPlayer(worstPlayer)
                 playerList.remove(worstPlayer)
             }
+
+
         }
+        getEqualTeams(team1, team2);
+        val difference = team1.getValue() - team2.getValue()
 
         return mutableListOf(team1, team2)
     }
+
+    private fun getEqualTeams(team1: Team, team2: Team) {
+        var playerList = mutableListOf<Player>()
+        
+
+    }
+
 
     private fun team1IsBetter(team1: Team, team2: Team): Boolean {
         return team1.getValue() >= team2.getValue()
